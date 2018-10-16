@@ -38,4 +38,35 @@ class Contact
     {
         $this->op_carrier = $op_carrier;
     }
+
+    /**
+     * @ODM\Field(
+     * type="int"
+     * )
+     */
+    private $cancelled;
+    public function getCancelled()
+    {
+        return $this->cancelled;
+    }
+    public function setCancelled($cancelled)
+    {
+        $this->cancelled = $cancelled;
+    }
+
+    /**
+     * @ODM\Field(
+     * type="string"
+     * )
+     */
+    private $origin;
+    public function getOrigin()
+    {
+        return $this->origin;
+    }
+
+    public function setOrigin($origin)
+    {
+        $this->origin = $origin;
+    }
 }
