@@ -2,6 +2,7 @@
 
 require_once 'vendor/autoload.php';
 require_once 'src/Documents/Contact.php';
+require_once 'src/Documents/Query1Result.php';
 
 use Doctrine\MongoDB\Connection;
 use Doctrine\ODM\MongoDB\Configuration;
